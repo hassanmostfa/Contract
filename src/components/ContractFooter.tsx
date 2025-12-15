@@ -1,13 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 interface ContractFooterProps {
-  clientName: string;
-  freelancerName?: string;
-  contractDate?: string;
+  clientName?: string;
 }
 
 const ContractFooter: React.FC<ContractFooterProps> = ({
-  clientName
+  clientName = ''
 }) => {
   const [teamNameValue, setTeamNameValue] = useState('السيد / علي محمود عليوه');
   const [clientNameValue, setClientNameValue] = useState(clientName);

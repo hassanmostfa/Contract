@@ -8,20 +8,12 @@ import ContractFooter from './components/ContractFooter';
 
 interface ContractProps {
   clientName?: string;
-  freelancerName?: string;
   projectDescription?: string;
-  contractDate?: string;
-  paymentAmount?: string;
-  deliveryDate?: string;
 }
 
 const Contract: React.FC<ContractProps> = ({
   clientName = '{{client_name}}',
-  freelancerName = '{{freelancer_name}}',
-  projectDescription = '{{project_description}}',
-  contractDate = '{{contract_date}}',
-  paymentAmount = '{{payment_amount}}',
-  deliveryDate = '{{delivery_date}}'
+  projectDescription = '{{project_description}}'
 }) => {
   const [isEditingScope, setIsEditingScope] = useState(false);
 
@@ -45,26 +37,16 @@ const Contract: React.FC<ContractProps> = ({
           <ContractHeader />
           <ContractBody
             clientName={clientName}
-            freelancerName={freelancerName}
             projectDescription={projectDescription}
-            paymentAmount={paymentAmount}
-            deliveryDate={deliveryDate}
             isEditingScope={isEditingScope}
             setIsEditingScope={setIsEditingScope}
           />
-          <ContractFooter
-            clientName={clientName}
-            freelancerName={freelancerName}
-            contractDate={contractDate}
-          />
+          <ContractFooter />
         </>
       ) : (
         <ContractBody
           clientName={clientName}
-          freelancerName={freelancerName}
           projectDescription={projectDescription}
-          paymentAmount={paymentAmount}
-          deliveryDate={deliveryDate}
           isEditingScope={isEditingScope}
           setIsEditingScope={setIsEditingScope}
         />

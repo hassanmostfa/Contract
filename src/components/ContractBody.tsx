@@ -13,20 +13,14 @@ import AdditionalTerms from './sections/AdditionalTerms';
 
 interface ContractBodyProps {
   clientName: string;
-  freelancerName: string;
   projectDescription: string;
-  paymentAmount: string;
-  deliveryDate: string;
   isEditingScope?: boolean;
   setIsEditingScope?: (value: boolean) => void;
 }
 
 const ContractBody: React.FC<ContractBodyProps> = ({
   clientName,
-  freelancerName,
   projectDescription,
-  paymentAmount,
-  deliveryDate,
   isEditingScope = false,
   setIsEditingScope
 }) => {
