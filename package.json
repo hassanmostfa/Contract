@@ -16,14 +16,11 @@
     "vite": "^7.2.4"
   },
   "dependencies": {
-    "@ckeditor/ckeditor5-react": "^11.0.0",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mui/icons-material": "^7.3.6",
     "@mui/material": "^7.3.6",
-    "ckeditor5": "^47.3.0",
     "react": "^19.2.1",
-    "react-dom": "^19.2.1",
-    "react-quill": "^2.0.0"
+    "react-dom": "^19.2.1"
   }
 }
